@@ -1940,7 +1940,8 @@ Google map
 }
 
 .work-descr {
-  color: #aaa;
+  color: dimgray;
+    font-size: 15px;
 }
 
 .work-item:hover .work-image:after {
@@ -1977,7 +1978,7 @@ Google map
 }
 
 .works-grid.works-hover-g .work-descr {
-  color: #fff;
+  color: dimgrey;
 }
 
 .works-grid.works-hover-g .work-item:hover .work-image:after {
