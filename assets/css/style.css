@@ -696,7 +696,7 @@ a,
 
 .btn.btn-border-w {
   background: #F3CD44;
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  
   color: #5E5E5E;
 }
 
@@ -931,7 +931,7 @@ blockquote {
 }
 
 .module-title + .module-subtitle {
-  margin-top: -35px;
+  margin-top: -15px;
 }
 
 /* Restaurant module header */
@@ -1382,6 +1382,7 @@ General Styles - Owlcarousel
 .titan-title-size-1 {
   letter-spacing: 4px;
   font-size: 15px;
+    text-align: center;
 }
 
 .titan-title-size-2 {
@@ -2846,6 +2847,7 @@ Google map
   .titan-title-size-1 {
     letter-spacing: 2px;
     font-size: 14px;
+      text-align: center;
   }
   .titan-title-size-2 {
     line-height: 1.3;
