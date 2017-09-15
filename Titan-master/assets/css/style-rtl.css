@@ -695,16 +695,16 @@ a,
 }
 
 .btn.btn-border-w {
-  background: transparent;
+  background: #F3CD44;
   border: 1px solid rgba(255, 255, 255, 0.75);
-  color: #fff;
+  color: #5E5E5E;
 }
 
 .btn.btn-border-w:hover,
 .btn.btn-border-w:focus {
-  background: #fff;
-  border-color: transparent;
-  color: #111;
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
 }
 
 .btn.btn-d {

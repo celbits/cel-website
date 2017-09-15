@@ -695,16 +695,16 @@ a,
 }
 
 .btn.btn-border-w {
-  background: transparent;
+  background: #F3CD44;
   border: 1px solid rgba(255, 255, 255, 0.75);
-  color: #fff;
+  color: #5E5E5E;
 }
 
 .btn.btn-border-w:hover,
 .btn.btn-border-w:focus {
-  background: #fff;
-  border-color: transparent;
-  color: #111;
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
 }
 
 .btn.btn-d {
@@ -715,6 +715,7 @@ a,
 .btn.btn-d:hover,
 .btn.btn-d:focus {
   background: #111111;
+    color: whitesmoke;
 }
 
 .btn.btn-b {
@@ -2358,7 +2359,7 @@ Google map
 }
 
 .sidebar .widget-title {
-  color: #111;
+  color: #F4CE2F;
 }
 
 .widget .widget-title {
@@ -2366,6 +2367,7 @@ Google map
   font-size: 14px;
   padding: 0 0 10px;
   margin: 0 0 15px;
+    color: #F4CE2F;
 }
 
 .widget ul {
