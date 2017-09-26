@@ -269,6 +269,7 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+      
     <script>
     $(document).ready(function(){
          $.ajax({
@@ -282,23 +283,45 @@
                      { 
                        if(count%4==0)
                            { content+= '</div><div class="row" style="padding-top: 40px;">'; }
-                       content+='<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">                <div class="team-item">';
+                       
+                        content+='<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">                <div class="team-item">';
                          
-                       var personal_data = team_data[count].split(',');
-                       for(var count2=0; count2 < personal_data.length; count2++)
-                           {
-                             switch(count2)
-                              {
-                                 case 0: content+= '<div class="team-image" style="height:250px; width:250px; overflow-y: hidden; position: relative;"><img  src="'+ personal_data[count2] + '" alt="Member Photo"/>';
-                                         content+= '<div class="team-detail">                                               <h5 class="font-alt">Hi all</h5>                                       <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>          <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>                                  </div>                                                </div>';
-                                         break;
-                                 case 1: content+= '<div class="team-descr font-alt" style="width: 250px;">                        <div class="team-name">' + personal_data[count2] + '</div>'; 
-                                         break;
-                                 case 2: content+= '<div class="team-role" style="color:#777">' + personal_data[count2] + '</div></div></div></div>';
-                                         break;
-                                 default: break;         
-                              }
-                           }
+                         var personal_data = team_data[count].split(',');
+                         content+= '<div class="team-image"><img  src="'+ personal_data[0] + '" alt="Member Photo"/>                     <div class="team-detail">';
+                         
+                         content+= '<h5 class="font-alt">Hi all</h5><p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>';          
+                             
+                         content+= '<div class="team-social">';
+                         
+                         for(var count2 = 3; count2 < personal_data.length ; count2++)
+                         {
+                             if(personal_data[count2].search(/(facebook)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-facebook"></i></a>';}
+                            
+                             else if(personal_data[count2].search(/(linkedin)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-linkedin"></i></a>';}
+                             
+                             else if(personal_data[count2].search(/(github)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-github"></i></a>';}
+                             
+                             else if(personal_data[count2].search(/(twitter)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-twitter"></i></a>';}
+                            
+                             else if(personal_data[count2].search(/(dribbble)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-dribbble"></i></a>';}
+                             
+                             else if(personal_data[count2].search(/(behance)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-behance"></i></a>';}
+
+                             else if(personal_data[count2].search(/(instagram)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-instagram"></i></a>';}
+                             
+                             else if(personal_data[count2].search(/(mail)/g)+1)
+                                {content+='<a href="'+ personal_data[count2] + '"><i class="fa fa-envelope"></i></a>';}
+                         }
+                         content+= '</div></div></div>';
+                         
+                         content+='<div class="team-descr font-alt"><div class="team-name">' + personal_data[1] + '</div><div class="team-role" style="color:#555">' + personal_data[2] + '</div></div></div></div>';
                      }
                 content += '</div>';    
                 $('#team_members').html(content); 
