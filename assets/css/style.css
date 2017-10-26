@@ -696,7 +696,7 @@ a,
 
 .btn.btn-border-w {
   background: #F3CD44;
-  
+
   color: #5E5E5E;
 }
 
@@ -1667,11 +1667,11 @@ Google map
 }
 
 .team-descr {
-  margin: 20px 0 0;
+  margin: 12px 0 0;
 }
 
 .team-name {
-  font-size: 14px;
+  font-size: 18px;
   color: #111;
 }
 
