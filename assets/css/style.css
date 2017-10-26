@@ -1522,6 +1522,10 @@ General Styles - Owlcarousel
 .footer .footer-social-links a {
   display: inline-block;
   padding: 0 6px;
+
+}
+.footer .footer-social-links .bg-dark a:hover {
+    color: #f4c32f;
 }
 
 /* -------------------------------------------------------------
